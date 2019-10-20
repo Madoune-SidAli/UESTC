@@ -44,5 +44,11 @@ public class HelloProxy implements uestc.fnc.ws.hw1.Hello {
     return hello;
   }
   
+  public java.lang.String helloName(java.lang.String name) throws java.rmi.RemoteException{
+    if (hello == null)
+      _initHelloProxy();
+    return hello.helloName(name);
+  }
+  
   
 }

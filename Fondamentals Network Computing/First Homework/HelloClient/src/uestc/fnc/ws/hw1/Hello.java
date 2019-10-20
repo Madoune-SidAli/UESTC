@@ -8,4 +8,5 @@
 package uestc.fnc.ws.hw1;
 
 public interface Hello extends java.rmi.Remote {
+    public java.lang.String helloName(java.lang.String name) throws java.rmi.RemoteException;
 }
