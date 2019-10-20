@@ -61,6 +61,25 @@ if(getHello10mtemp == null){
         <%
         }}
 break;
+case 13:
+        gotMethod = true;
+        String name_1id=  request.getParameter("name16");
+            java.lang.String name_1idTemp = null;
+        if(!name_1id.equals("")){
+         name_1idTemp  = name_1id;
+        }
+        java.lang.String helloName13mtemp = sampleHelloProxyid.helloName(name_1idTemp);
+if(helloName13mtemp == null){
+%>
+<%=helloName13mtemp %>
+<%
+}else{
+        String tempResultreturnp14 = org.eclipse.jst.ws.util.JspUtils.markup(String.valueOf(helloName13mtemp));
+        %>
+        <%= tempResultreturnp14 %>
+        <%
+}
+break;
 }
 } catch (Exception e) { 
 %>

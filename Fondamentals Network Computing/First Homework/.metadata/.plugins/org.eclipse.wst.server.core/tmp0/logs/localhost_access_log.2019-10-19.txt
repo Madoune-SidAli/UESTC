@@ -114,3 +114,7 @@
 0:0:0:0:0:0:0:1 - - [19/Oct/2019:21:08:26 +0100] "GET /HelloClient/sampleHelloProxy/Method.jsp HTTP/1.1" 200 340
 0:0:0:0:0:0:0:1 - - [19/Oct/2019:21:08:26 +0100] "GET /HelloClient/sampleHelloProxy/Input.jsp HTTP/1.1" 200 127
 0:0:0:0:0:0:0:1 - - [19/Oct/2019:21:08:26 +0100] "GET /HelloClient/sampleHelloProxy/Result.jsp?endpoint=http://localhost:13209/Hello/services/Hello& HTTP/1.1" 200 118
+0:0:0:0:0:0:0:1 - - [19/Oct/2019:21:52:51 +0100] "GET /HelloClient/sampleHelloProxy/TestClient.jsp?endpoint=http://localhost:13209/Hello/services/Hello HTTP/1.1" 200 643
+0:0:0:0:0:0:0:1 - - [19/Oct/2019:21:52:51 +0100] "GET /HelloClient/sampleHelloProxy/Method.jsp HTTP/1.1" 200 340
+0:0:0:0:0:0:0:1 - - [19/Oct/2019:21:52:51 +0100] "GET /HelloClient/sampleHelloProxy/Input.jsp HTTP/1.1" 200 127
+0:0:0:0:0:0:0:1 - - [19/Oct/2019:21:52:51 +0100] "GET /HelloClient/sampleHelloProxy/Result.jsp?endpoint=http://localhost:13209/Hello/services/Hello& HTTP/1.1" 200 118
