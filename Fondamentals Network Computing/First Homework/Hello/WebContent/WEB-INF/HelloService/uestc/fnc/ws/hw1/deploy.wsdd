@@ -2,14 +2,18 @@
 
   <!-- Services from HelloService WSDL service -->
 
-  <service name="Hello" provider="java:RPC" style="document" use="encoded">
+  <service name="Hello" provider="java:RPC" style="wrapped" use="literal">
       <parameter name="wsdlTargetNamespace" value="http://hw1.ws.fnc.uestc"/>
       <parameter name="wsdlServiceElement" value="HelloService"/>
+      <parameter name="schemaQualified" value="http://hw1.ws.fnc.uestc"/>
       <parameter name="wsdlServicePort" value="Hello"/>
       <parameter name="className" value="uestc.fnc.ws.hw1.Hello"/>
       <parameter name="wsdlPortType" value="Hello"/>
       <parameter name="typeMappingVersion" value="1.2"/>
-      <parameter name="allowedMethods" value="*"/>
+      <operation xmlns:operNS="http://hw1.ws.fnc.uestc" xmlns:retNS="http://hw1.ws.fnc.uestc" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="helloName" qname="operNS:helloName" returnQName="retNS:helloNameReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://hw1.ws.fnc.uestc" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:name" type="tns:string"/>
+      </operation>
+      <parameter name="allowedMethods" value="helloName"/>
 
   </service>
 </deployment>
